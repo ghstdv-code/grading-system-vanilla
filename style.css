@@ -101,6 +101,7 @@ header p{
 }
 
 .form #btn-clear{
+    margin-bottom: -5px;
     background: linear-gradient(135deg, #1c5a8d 0%, #1376d3 100%);
 }
 
@@ -125,4 +126,15 @@ header p{
     color: #051937;
     font-weight: 800;
     margin-bottom: 10px;
+}
+
+@media (max-width: 600px){
+    .wrapper{
+        width: 350px;
+        padding: 20px 15px 5px;
+    }
+
+    .form-group{
+        font-size: 0.925rem;
+    }
 }
