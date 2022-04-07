@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
+}
+
+.wrapper{
+    background: #fff;
+    width: 400px;
+    padding: 16px 25px 12px;
+    border-radius: 5px;
+    -webkit-box-shadow: 10px 10px 25px -6px rgba(0,0,0,0.68);
+    -moz-box-shadow: 10px 10px 25px -6px rgba(0,0,0,0.68);
+    box-shadow: 10px 10px 25px -6px rgba(0,0,0,0.68);
+}
+
+header{
+    border-bottom: 1px solid #999;
+}
+
+header h1{
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+header p{
+    font-size: 1rem;
+    color: #474747
+}
+
+.form {
+    margin: 15px 0;
+}
+
+.form :where(button, .form-group){
+    width: 100%;
+    height: 2.5rem;
+    border: none;
+    outline: none;
+}
+
+
+.form-group, .form button{
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+.form-group{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.form-group label{
+    font-size: 1.1rem;
+}
+
+.form-group input{
+    width: 50%;
+    display: block;
+    border: 1px solid #474747;
+    font-size: 1rem;
+    text-align: center;
+    height: 100%;
+    outline: none;
+    font-size: 18px;
+    border-radius: 5px;
+    border: 1px solid #999;
+}
+
+.form-group input:active,
+.form-group input:focus{
+    border: 2px solid #3C87FF;
+}
+
+.form button{
+    border: none;
+    outline: none;
+    color: #fff;
+    cursor: pointer;
+    font-size: 13px;
+    padding: 7px 13px;
+    border-radius: 4px;
+    letter-spacing: 0.3px;
+}
+
+.form #btn-compute{
+    background: linear-gradient(135deg, #3f37c9 0%, #480ca8 100%);
+    margin-top: 10px;
+}
+
+.form #btn-clear{
+    background: linear-gradient(135deg, #1c5a8d 0%, #1376d3 100%);
+}
+
+.form button:hover{
+    opacity: 0.95;
+}
+
+.error{
+    width: 100%;
+    color: red;
+    text-align: center;
+    font-weight: 900;
+    margin: 5px auto 0;
+    display: none;
+    font-size: 0.8rem;
+}
+
+#average{
+    font-size: 1.025rem;
+    text-align: center;
+    display: none;
+    color: #051937;
+    font-weight: 800;
+    margin-bottom: 10px;
+}

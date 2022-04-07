@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grading-System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+            <h1>Grading System</h1>
+            <p>Daemon East Institute</p>
+        </header>
+        <p class="error">$(Error)</p>
+        <div class="form">
+            <div class="form-group">
+                <label for="tbx-prelim">Prelim:</label>
+                <input onkeypress="return IsDigit(event, this)" type="text" 
+                name="tbx-prelim" id="tbx-prelim">
+            </div>
+
+            <div class="form-group">
+                <label for="tbx-midterm">Midterm:</label>
+                <input onkeypress="return IsDigit(event, this)" type="text"
+                name="tbx-midterm" id="tbx-midterm">
+            </div>
+
+            <div class="form-group">
+                <label for="tbx-prefinals">Pre-Finals:</label>
+                <input onkeypress="return IsDigit(event, this)" type="text"
+                name="tbx-prefinals" id="tbx-prefinals">
+            </div>
+
+            <div class="form-group">
+                <label for="tbx-finals">Finals:</label>
+                <input onkeypress="return IsDigit(event, this)" type="text"
+                name="tbx-finals" id="tbx-finals">
+            </div>
+
+            <button id="btn-compute">Compute</button>
+            <button id="btn-clear">Clear</button>
+        </div>
+        <h2 id="average">$(Average)</h2>
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+        function IsDigit(e, obj) {
+            let dotcontains = (obj.value).indexOf(".") != -1;
+
+            if (dotcontains) if (e.charCode == 46) return false;
+            else if (e.charCode == 46) return true;
+
+            if((e.charCode >= 48 && e.charCode <= 57) || e.charCode === 46) return true;
+        return false;
+        }
+    </script>
+</body>
+
+</html>
